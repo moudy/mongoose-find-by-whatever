@@ -1,0 +1,24 @@
+{
+  "name": "mongoose-find-by-whatever",
+  "version": "0.0.1",
+  "description": "Build find criteria based on input value.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mongoose",
+    "findBy"
+  ],
+  "author": "moudy",
+  "license": "ISC",
+  "devDependencies": {
+    "mongoose": "~3.8.5",
+    "mocha": "~1.17.1",
+    "chai": "~1.8.1",
+    "sinon": "~1.7.3"
+  }
+}
