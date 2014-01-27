@@ -11,5 +11,11 @@ var ModelSchema = mongoose.Schema({
 mongoose.models = {};
 mongoose.modelSchemas = {};
 
-ModelSchema.plugin(require('../index'), [{email: /@/}, {_id: 'ObjectId'}, {name:'*'}]);
+ModelSchema.plugin(require('../index'), [
+  {email: /@/}
+, {secret: function (value) { return value.indexOf('secret') !== -1; }}
+, {_id: 'ObjectId'}
+, {name:'*'}
+]);
+
 module.exports = mongoose.model('TestModel', ModelSchema);

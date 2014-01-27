@@ -14,7 +14,7 @@
     "findBy"
   ],
   "author": "moudy",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "mongoose": "~3.8.5",
     "mocha": "~1.17.1",

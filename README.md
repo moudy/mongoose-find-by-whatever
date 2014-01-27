@@ -29,6 +29,7 @@ var UserSchema = mongoose.Schema({ name: String , email: String });
 var whatevers = [
   {email: /@/} // Regexp
 , {_id: 'ObjectId'} // ObjectId
+, {secret: function (value) { return value.indexOf('secret') !== -1; }}
 , {name:'*'} // Everything
 ];
 
