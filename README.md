@@ -1,4 +1,5 @@
-# Model.findByWhatever('whatever')  [![Build Status](https://travis-ci.org/moudy/mongoose-find-by-whatever.png)](https://travis-ci.org/moudy/mongoose-find-by-whatever)
+[![Build Status](https://travis-ci.org/moudy/mongoose-find-by-whatever.png)](https://travis-ci.org/moudy/mongoose-find-by-whatever)
+# Model.findByWhatever('whatever') 
 
 Creates a find query based on the value you are trying to find by. I mostly use use this to add "login with username or password" option. For example `User.findByWhatever(username or email)` would turn into `User.find({username: username})` or `User.find({email: email})` based on some rules you define.
 
